@@ -1,0 +1,19 @@
+{
+  "name": "rspress-doc-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview",
+    "p": "sh publish.sh"
+  },
+  "dependencies": {
+    "rspress": "^1.31.0",
+    "rspress-plugin-gh-pages": "^0.3.0",
+    "rspress-plugin-toc": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16"
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "text": "快速开始",
+    "link": "/guide/",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "在线体验",
+    "link": "https://tinypng.wcrane.cn/example"
+  },
+  {
+    "text": "前端知识体系",
+    "link": "https://web.wcrane.cn"
+  }
+]
