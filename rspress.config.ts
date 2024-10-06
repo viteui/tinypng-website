@@ -1,5 +1,6 @@
 import * as path from 'path';
 import { defineConfig } from 'rspress/config';
+import ghPages from 'rspress-plugin-gh-pages';
 
 // import toc from 'rspress-plugin-toc';
 
@@ -12,6 +13,14 @@ export default defineConfig({
     light: '/rspress-light-logo.png',
     dark: '/rspress-dark-logo.png',
   },
+  plugins: [
+    ghPages({
+      siteBase: '',
+      dest: 'tinypng',
+      repo: 'https://github.com/viteui/example.git',
+      branch: 'tinypng',
+    }),
+  ],
   themeConfig: {
     socialLinks: [
       { icon: 'github', mode: 'link', content: 'https://github.com/viteui/tinypng-lib' },
