@@ -4,6 +4,9 @@ function build(){
     password="Xsx.315211"
     ip=root@39.107.82.50
     export NODE_OPTIONS=--max_old_space_size=8096
+    git add .
+    git commit -m "feat: update docs"
+    git push 
     # 执行打包命令
     yarn build || exit 1
     # 压缩打包后的文件
@@ -32,7 +35,7 @@ function buildExapmle(){
     # # 迁移压缩文件到服务器对应目录下
     sshpass -p$password ssh $ip "cd $remote_directory_path  && unzip ./build.zip -d ./example && rm -rf ./build.zip" || exit 1
     rm -rf build.zip || exit 1
-    curl https://www.feishu.cn/flow/api/trigger-webhook/58e61316038b59bb6834ab42ab843b72
+    # curl https://www.feishu.cn/flow/api/trigger-webhook/58e61316038b59bb6834ab42ab843b72
 }
 
 build 
